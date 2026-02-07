@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "name": "Ethiopia Chelchele High Extraction",
+  "id": "c39e2c3f-6a4f-4b9b-9b06-4a0d8c9f3a6b",
+  "author": "Unknown",
+  "author_id": "8d6b7b7a-3f4d-4a12-9d0d-2d3c5f7b8a1e",
+  "temperature": 94,
+  "final_weight": 34,
+  "stages": [
+    {
+      "name": "Preinfusion",
+      "key": "preinfusion",
+      "type": "flow",
+      "dynamics": {
+        "points": [
+          [0, 0.5],
+          [8, 2.0]
+        ],
+        "over": "time",
+        "interpolation": "linear"
+      },
+      "exit_triggers": [
+        {
+          "type": "time",
+          "value": 8,
+          "comparison": ">="
+        }
+      ]
+    },
+    {
+      "name": "Extraction",
+      "key": "extraction",
+      "type": "pressure",
+      "dynamics": {
+        "points": [
+          [0, 2.0],
+          [6, 9.0],
+          [25, 8.0],
+          [35, 7.0]
+        ],
+        "over": "time",
+        "interpolation": "curve"
+      },
+      "exit_triggers": [
+        {
+          "type": "weight",
+          "value": 34,
+          "comparison": ">="
+        }
+      ]
+    }
+  ]
+}
