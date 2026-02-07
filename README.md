@@ -1,6 +1,10 @@
 # Meticulous Machine Profile Format
 
-This repo contains an example profile and a json schema for the meticulous profile json.
+This repository defines a JSON schema for espresso profiles and provides example profiles that conform to it.
 
-rfc.md contains a super dirty explanation which is a) unfinished and b) only public to serve as a basis for discussion.
-A final and dependable version will be marked as such!
+Key files:
+
+- [schema.json](schema.json) defines the espresso profile format.
+- [example_profile.json](example_profile.json) is a reference profile that validates against the schema.
+- [rfc.md](rfc.md) contains an early draft discussion of the format.
+- [profiles/README.md](profiles/README.md) lists authored profiles.
