@@ -23,7 +23,14 @@
         {
           "type": "time",
           "value": 8,
+          "relative": false,
           "comparison": ">="
+        }
+      ],
+      "limits": [
+        {
+          "type": "pressure",
+          "value": 3.0
         }
       ]
     },
@@ -45,7 +52,14 @@
         {
           "type": "weight",
           "value": 34,
+          "relative": false,
           "comparison": ">="
+        }
+      ],
+      "limits": [
+        {
+          "type": "flow",
+          "value": 3.5
         }
       ]
     }
